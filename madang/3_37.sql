@@ -1,0 +1,18 @@
+DESC NewBook;
+
+ALTER TABLE NewBook 	
+ADD isbn VARCHAR(13);
+
+ALTER TABLE NewBook 
+MODIFY isbn INTEGER;
+
+-- isbn 삭제
+ALTER TABLE NewBook 
+DROP COLUMN isbn;
+
+ALTER TABLE NewBook 
+MODIFY booid INTEGER NOT NULL;
+
+-- Error! 이미 PRIMARY KEY가 존재!
+ALTER TABLE NewBook 
+MODIFY bookid INT PRIMARY KEY;

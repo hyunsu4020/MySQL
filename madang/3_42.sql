@@ -1,0 +1,3 @@
+DROP TABLE NewBook;
+DROP TABLE NewCustomer;
+DROP TABLE NewOrders;
